@@ -62,5 +62,5 @@ if st.button("Predict Wellness Package Purchase"):
     prediction = model.predict(input_data)[0]
     result = "Purchase" if prediction == 1 else "No Purchase"
     st.subheader("Prediction Result:")
-    st.write(f"The predicted status for the customer is {prediction[0]}")
+    st.write(f"The predicted status for the customer is {prediction}")
     st.success(f"The model predicts: **{result}**")
