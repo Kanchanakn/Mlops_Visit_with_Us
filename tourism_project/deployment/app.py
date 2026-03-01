@@ -19,7 +19,7 @@ Please enter the required data below to get a prediction.
 Age = st.number_input("Age", min_value=18, max_value=100, value=30)
 TypeofContact = st.selectbox("Type of Contact", ["Company Invited", "Self Enquiry", "Other"])
 CityTier = st.selectbox("CityTier", ["1", "2", "3"])
-Duration = st.number_input("Duration", min_value=1, max_value=70, value=10)
+DurationOfPitch = st.number_input("Duration", min_value=1, max_value=70, value=10)
 Occupation = st.selectbox("Occupation", ["Free Lancer", "Salaried", "Small Business", "Large Business"])
 Gender = st.selectbox("Gender", ["Male", "Female"])
 NumberOfPersonVisiting = st.number_input("NumberOfPersonVisiting", min_value=1, max_value=6, value=2)
@@ -40,7 +40,7 @@ input_data = pd.DataFrame([{
     'Age': Age,
     'TypeofContact': TypeofContact,
     'CityTier': CityTier,
-    'DurationOfPitch': Duration,
+    'DurationOfPitch': DurationOfPitch,
     'Occupation': Occupation,
     'Gender': Gender,
     'NumberOfPersonVisiting': NumberOfPersonVisiting,
